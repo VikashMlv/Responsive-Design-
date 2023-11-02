@@ -3,11 +3,71 @@
 
 <head>
 
+    <style>
+        .responsive-text {
+            background-color: green;
+            padding: 20px;
+            margin: 50px;
+            text-align: center;
+            color: white;
+        }
+
+
+        /* width range between 500px to 800px this media rule will apply*/
+        @media screen and (min-width:500px) and (max-width:800px) {
+            .responsive-text {
+                background-color: orange;
+                color: black;
+            }
+
+        }
+
+
+        /* width range between 0px to 499 this media rule will apply*/
+        @media screen and (min-width:0px) and (max-width:499px) {
+            .responsive-text {
+                background-color: darkblue;
+                color: white;
+                margin: 0px;
+            }
+
+        }
+
+
+        /* max-width 350px if device width less than 350px than only this  media rule will apply*/
+        @media screen and (max-width:350px){
+            .responsive-text {
+                background-color: darkred;
+                color: white;
+                margin: 0px;
+            }
+
+        }
+
+
+        /* min-width 350px if device width greater than 350px than only this  media rule will apply*/
+        @media screen and (min-width:350px){
+            .responsive-text {
+                background-color: cyan;
+                color: black;
+                margin: 0px;
+            }
+
+        }
+    </style>
+
 </head>
 
 <body>
     <div>
-     <h3>Mobile First Responsive Design</h3>
+        <h3>Mobile First Responsive Design</h3>
+    </div>
+
+
+    <div class="responsive-text">
+
+        <div>Welcome to Html</div>
+
     </div>
 </body>
 
